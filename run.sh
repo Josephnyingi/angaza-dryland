@@ -18,9 +18,9 @@ dev() {
     echo "  Docs → http://localhost:3003/api/docs"
     echo ""
     trap _stop_dev SIGINT SIGTERM
-    pnpm --filter api start:dev &
+    pnpm --filter angaza-dryland-api start:dev &
     API_PID=$!
-    pnpm --filter web dev &
+    pnpm --filter angaza-dryland-web dev &
     WEB_PID=$!
     wait $API_PID $WEB_PID
 }
@@ -28,11 +28,11 @@ dev() {
 dev:api() {
     _check_env
     docker compose -f docker-compose.dev.yaml up postgres -d
-    pnpm --filter api start:dev
+    pnpm --filter angaza-dryland-api start:dev
 }
 
 dev:web() {
-    pnpm --filter web dev
+    pnpm --filter angaza-dryland-web dev
 }
 
 dev:stop() {
