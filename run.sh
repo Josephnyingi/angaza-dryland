@@ -9,6 +9,7 @@ set -e
 
 dev() {
     _check_env
+    _free_ports
     echo "Starting PostgreSQL..."
     docker compose -f docker-compose.dev.yaml up postgres -d
     echo ""
@@ -79,6 +80,16 @@ help() {
 }
 
 # ── Internal ─────────────────────────────
+
+_free_ports() {
+    for port in 3003; do
+        pid=$(lsof -ti:$port -sTCP:LISTEN 2>/dev/null)
+        if [ -n "$pid" ]; then
+            echo "Freeing port $port (pid $pid)..."
+            kill -9 $pid 2>/dev/null || true
+        fi
+    done
+}
 
 _check_env() {
     if [ ! -f ".env" ]; then

@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     strategy: 'no_prefix',
-    langDir: 'i18n/locales/',
+    langDir: 'locales/',
     lazy: false,
   },
 
