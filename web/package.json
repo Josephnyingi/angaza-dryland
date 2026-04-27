@@ -6,7 +6,7 @@
     "node": "22"
   },
   "scripts": {
-    "dev": "nuxi dev",
+    "dev": "nuxi dev --host",
     "build": "nuxi build",
     "generate": "nuxi generate",
     "preview": "nuxi preview",

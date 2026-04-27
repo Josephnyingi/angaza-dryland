@@ -35,17 +35,8 @@ export default defineNuxtConfig({
 
   primevue: {
     options: {
-      ripple: true,
-      theme: {
-        preset: 'Aura',
-        options: {
-          darkModeSelector: '.app-dark',
-          cssLayer: {
-            name: 'primevue',
-            order: 'tailwind-base, primevue, tailwind-utilities',
-          },
-        },
-      },
+      unstyled: true,
+      ripple: false,
     },
     autoImport: true,
   },
@@ -66,10 +57,6 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:3003',
     },
-  },
-
-  build: {
-    transpile: ['primevue'],
   },
 
   vite: {
