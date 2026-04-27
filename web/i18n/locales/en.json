@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "encyclopedia": "Encyclopedia",
+    "training": "Training",
+    "marketplace": "Marketplace",
+    "map": "Map",
+    "register": "Register",
+    "aiAdvisor": "AI Advisor"
+  },
+  "common": {
+    "loading": "Loading…",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "search": "Search",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "contactUs": "Contact Us",
+    "back": "Back",
+    "close": "Close",
+    "retry": "Try Again",
+    "error": "Something went wrong. Please try again."
+  },
+  "home": {
+    "heroTitle": "Grow More. Earn More.",
+    "heroSubtitle": "Connect with buyers, learn best practices, and unlock the true value of Kenyan dryland products.",
+    "featuredProducts": "Featured Products",
+    "trainNow": "Train Now",
+    "viewMarketplace": "View Marketplace",
+    "findCollection": "Find Collection Point",
+    "stats": {
+      "harvesters": "Harvesters Registered",
+      "trainings": "Trainings Completed",
+      "listings": "Active Listings"
+    },
+    "aiCta": {
+      "title": "Ask the AI Advisor",
+      "subtitle": "Get instant answers about prices, harvesting, and quality."
+    }
+  },
+  "encyclopedia": {
+    "title": "Product Encyclopedia",
+    "searchPlaceholder": "Search products…",
+    "all": "All",
+    "nutritionalInfo": "Nutritional Info",
+    "harvestingCalendar": "Harvesting Calendar",
+    "processingMethods": "Processing Methods",
+    "overview": "Overview",
+    "nutrition": "Nutrition",
+    "harvesting": "Harvesting",
+    "processing": "Processing",
+    "noResults": "No products found"
+  },
+  "training": {
+    "title": "Training Hub",
+    "watchVideo": "Watch Video",
+    "takeQuiz": "Take Quiz",
+    "earnBadge": "Earn Badge",
+    "completed": "Completed",
+    "duration": "Duration",
+    "minutesShort": "min",
+    "progress": "Your Progress",
+    "modulesCompleted": "modules completed",
+    "startModule": "Start Module",
+    "continueModule": "Continue",
+    "quizTitle": "Module Quiz",
+    "submitAnswers": "Submit Answers",
+    "badgeEarned": "Badge Earned!",
+    "congratulations": "Congratulations! You completed this module."
+  },
+  "marketplace": {
+    "title": "Marketplace",
+    "listProduct": "List a Product",
+    "makeInquiry": "Make Inquiry",
+    "priceGuide": "Price Guide",
+    "quantityKg": "Quantity (kg)",
+    "pricePerKg": "Price per kg (KSh)",
+    "quality": "Quality Grade",
+    "browseListings": "Browse Listings",
+    "myListings": "My Listings",
+    "inquiries": "Inquiries",
+    "noListings": "No listings yet",
+    "contactSeller": "Contact Seller",
+    "qualityGrades": {
+      "A": "Grade A – Premium",
+      "B": "Grade B – Standard",
+      "C": "Grade C – Processing"
+    },
+    "currentPrices": "Current Market Prices"
+  },
+  "map": {
+    "title": "Collection Points",
+    "collectionPoints": "Collection Points",
+    "warehouses": "Warehouses",
+    "buyerZones": "Buyer Zones",
+    "getDirections": "Get Directions",
+    "all": "All",
+    "noPointSelected": "Tap a marker to see details",
+    "hours": "Hours",
+    "contact": "Contact",
+    "address": "Address"
+  },
+  "register": {
+    "title": "Create Account",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "county": "County",
+    "role": "I am a",
+    "harvester": "Harvester",
+    "harvesterDesc": "I collect dryland products",
+    "buyer": "Buyer",
+    "buyerDesc": "I purchase dryland products",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "languagePreference": "Preferred Language",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginHere": "Log in here",
+    "agreeToTerms": "I agree to the terms and conditions",
+    "selectCounty": "Select your county"
+  },
+  "auth": {
+    "login": "Log In",
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Sign in to your Angaza account",
+    "email": "Email Address",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "registerHere": "Register here"
+  },
+  "ai": {
+    "title": "AI Advisor",
+    "placeholder": "Ask about prices, harvesting, or quality…",
+    "thinking": "Thinking…",
+    "suggestions": {
+      "price": "What is baobab worth this week?",
+      "dry": "How do I dry baobab pulp?",
+      "buyers": "Find buyers near Makueni"
+    },
+    "disclaimer": "AI responses are for guidance only. Verify prices with local buyers."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Angaza Dryland",
+  "short_name": "Angaza",
+  "description": "Empowering Kenyan dryland harvesters of baobab, tamarind, and wild cotton",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF3E0",
+  "theme_color": "#2D6A4F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["agriculture", "education", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}

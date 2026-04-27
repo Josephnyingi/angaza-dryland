@@ -1,0 +1,81 @@
+import type { Config } from 'tailwindcss'
+
+export default {
+  content: [
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './app.vue',
+    './error.vue',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#2D6A4F',
+          50: '#F0F7F4',
+          100: '#D8EDE6',
+          200: '#B0DACC',
+          300: '#82C0AC',
+          400: '#52A087',
+          500: '#2D6A4F',
+          600: '#245740',
+          700: '#1C4532',
+          800: '#133224',
+          900: '#0A1F16',
+        },
+        secondary: {
+          DEFAULT: '#F4A261',
+          50: '#FEF7EF',
+          100: '#FDEBD6',
+          200: '#FAD5AC',
+          300: '#F8BF83',
+          400: '#F4A261',
+          500: '#F08230',
+          600: '#D4671A',
+          700: '#A84F14',
+          800: '#7C380E',
+          900: '#502208',
+        },
+        accent: {
+          DEFAULT: '#E76F51',
+          50: '#FDF3F0',
+          100: '#FAE1D9',
+          200: '#F5C2B2',
+          300: '#EF9E89',
+          400: '#E76F51',
+          500: '#D94E2B',
+          600: '#B53B20',
+          700: '#8E2D18',
+          800: '#681E10',
+          900: '#420F08',
+        },
+        neutral: {
+          DEFAULT: '#FAF3E0',
+          50: '#FEFCF6',
+          100: '#FAF3E0',
+          200: '#F3E5BB',
+          300: '#EBD594',
+          400: '#E2C46B',
+          500: '#D4AA3D',
+          600: '#A8862F',
+          700: '#7C6222',
+          800: '#503F15',
+          900: '#241C08',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      screens: {
+        xs: '375px',
+      },
+      spacing: {
+        'safe-bottom': 'env(safe-area-inset-bottom)',
+        'safe-top': 'env(safe-area-inset-top)',
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config

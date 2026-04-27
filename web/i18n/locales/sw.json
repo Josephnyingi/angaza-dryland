@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "encyclopedia": "Ensaiklopidia",
+    "training": "Mafunzo",
+    "marketplace": "Soko",
+    "map": "Ramani",
+    "register": "Jisajili",
+    "aiAdvisor": "Mshauri wa AI"
+  },
+  "common": {
+    "loading": "Inapakia…",
+    "submit": "Wasilisha",
+    "cancel": "Ghairi",
+    "save": "Hifadhi",
+    "search": "Tafuta",
+    "learnMore": "Jifunze Zaidi",
+    "viewAll": "Angalia Yote",
+    "contactUs": "Wasiliana Nasi",
+    "back": "Rudi",
+    "close": "Funga",
+    "retry": "Jaribu Tena",
+    "error": "Kuna hitilafu. Tafadhali jaribu tena."
+  },
+  "home": {
+    "heroTitle": "Zalisha Zaidi. Pata Zaidi.",
+    "heroSubtitle": "Unganika na wanunuzi, jifunze mbinu bora, na fungua thamani ya kweli ya mazao ya maeneo kame ya Kenya.",
+    "featuredProducts": "Bidhaa Zilizoangaziwa",
+    "trainNow": "Fanya Mafunzo Sasa",
+    "viewMarketplace": "Angalia Soko",
+    "findCollection": "Pata Kituo cha Ukusanyaji",
+    "stats": {
+      "harvesters": "Wavunaji Waliojisajili",
+      "trainings": "Mafunzo Yaliyokamilika",
+      "listings": "Matangazo Yanayoendelea"
+    },
+    "aiCta": {
+      "title": "Uliza Mshauri wa AI",
+      "subtitle": "Pata majibu ya haraka kuhusu bei, uvunaji, na ubora."
+    }
+  },
+  "encyclopedia": {
+    "title": "Ensaiklopidia ya Bidhaa",
+    "searchPlaceholder": "Tafuta bidhaa…",
+    "all": "Zote",
+    "nutritionalInfo": "Taarifa za Lishe",
+    "harvestingCalendar": "Kalenda ya Uvunaji",
+    "processingMethods": "Mbinu za Usindikaji",
+    "overview": "Muhtasari",
+    "nutrition": "Lishe",
+    "harvesting": "Uvunaji",
+    "processing": "Usindikaji",
+    "noResults": "Hakuna bidhaa zilizopatikana"
+  },
+  "training": {
+    "title": "Kituo cha Mafunzo",
+    "watchVideo": "Tazama Video",
+    "takeQuiz": "Fanya Maswali",
+    "earnBadge": "Pata Beji",
+    "completed": "Imekamilika",
+    "duration": "Muda",
+    "minutesShort": "dak",
+    "progress": "Maendeleo Yako",
+    "modulesCompleted": "moduli zilizokamilika",
+    "startModule": "Anza Moduli",
+    "continueModule": "Endelea",
+    "quizTitle": "Maswali ya Moduli",
+    "submitAnswers": "Wasilisha Majibu",
+    "badgeEarned": "Beji Imepatikana!",
+    "congratulations": "Hongera! Umekamilisha moduli hii."
+  },
+  "marketplace": {
+    "title": "Soko",
+    "listProduct": "Tangaza Bidhaa",
+    "makeInquiry": "Uliza Maswali",
+    "priceGuide": "Mwongozo wa Bei",
+    "quantityKg": "Kiasi (kg)",
+    "pricePerKg": "Bei kwa kg (KSh)",
+    "quality": "Daraja la Ubora",
+    "browseListings": "Vinjari Matangazo",
+    "myListings": "Matangazo Yangu",
+    "inquiries": "Maswali",
+    "noListings": "Hakuna matangazo bado",
+    "contactSeller": "Wasiliana na Muuzaji",
+    "qualityGrades": {
+      "A": "Daraja A – Premium",
+      "B": "Daraja B – Kawaida",
+      "C": "Daraja C – Usindikaji"
+    },
+    "currentPrices": "Bei za Sasa Sokoni"
+  },
+  "map": {
+    "title": "Vituo vya Ukusanyaji",
+    "collectionPoints": "Vituo vya Ukusanyaji",
+    "warehouses": "Maghala",
+    "buyerZones": "Maeneo ya Wanunuzi",
+    "getDirections": "Pata Mwelekeo",
+    "all": "Vyote",
+    "noPointSelected": "Bonyeza alama kuona maelezo",
+    "hours": "Masaa",
+    "contact": "Mawasiliano",
+    "address": "Anwani"
+  },
+  "register": {
+    "title": "Fungua Akaunti",
+    "firstName": "Jina la Kwanza",
+    "lastName": "Jina la Ukoo",
+    "email": "Anwani ya Barua Pepe",
+    "phone": "Nambari ya Simu",
+    "county": "Kaunti",
+    "role": "Mimi ni",
+    "harvester": "Mvunaji",
+    "harvesterDesc": "Nakusanya mazao ya maeneo kame",
+    "buyer": "Mnunuzi",
+    "buyerDesc": "Ninanunua mazao ya maeneo kame",
+    "password": "Nywila",
+    "confirmPassword": "Thibitisha Nywila",
+    "languagePreference": "Lugha Unayopendelea",
+    "alreadyHaveAccount": "Una akaunti tayari?",
+    "loginHere": "Ingia hapa",
+    "agreeToTerms": "Nakubaliana na masharti na hali",
+    "selectCounty": "Chagua kaunti yako"
+  },
+  "auth": {
+    "login": "Ingia",
+    "loginTitle": "Karibu Tena",
+    "loginSubtitle": "Ingia kwenye akaunti yako ya Angaza",
+    "email": "Anwani ya Barua Pepe",
+    "password": "Nywila",
+    "forgotPassword": "Umesahau Nywila?",
+    "noAccount": "Huna akaunti?",
+    "registerHere": "Jisajili hapa"
+  },
+  "ai": {
+    "title": "Mshauri wa AI",
+    "placeholder": "Uliza kuhusu bei, uvunaji, au ubora…",
+    "thinking": "Inafikiri…",
+    "suggestions": {
+      "price": "Baobab inafaa bei gani wiki hii?",
+      "dry": "Ninawezaje kukaush massa ya baobab?",
+      "buyers": "Pata wanunuzi karibu na Makueni"
+    },
+    "disclaimer": "Majibu ya AI ni kwa mwongozo tu. Thibitisha bei na wanunuzi wa karibu."
+  }
+}
