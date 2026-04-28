@@ -32,10 +32,7 @@ function isActive(item: { to: string; exact?: boolean }) {
       <div class="max-w-lg mx-auto px-4 h-14 flex items-center justify-between">
         <!-- Logo -->
         <NuxtLink to="/" class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <span class="text-white font-bold text-sm">A</span>
-          </div>
-          <span class="font-bold text-primary text-lg leading-tight">Angaza</span>
+          <img src="/Angaza_Logo.jpeg" alt="Angaza" class="h-9 w-auto object-contain" />
         </NuxtLink>
 
         <!-- Right actions -->
