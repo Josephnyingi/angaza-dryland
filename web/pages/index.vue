@@ -48,25 +48,32 @@ const products = [
 <template>
   <div class="page-container py-4 space-y-6">
     <!-- Hero -->
-    <section class="rounded-2xl bg-gradient-to-br from-primary to-primary-700 text-white p-6 shadow-md">
-      <div class="text-4xl mb-3">🌍</div>
-      <h1 class="text-2xl font-bold leading-tight mb-2">
-        {{ t('home.heroTitle') }}
-      </h1>
-      <p class="text-white/80 text-sm leading-relaxed">
-        {{ t('home.heroSubtitle') }}
-      </p>
-      <!-- Quick actions -->
-      <div class="mt-5 flex flex-wrap gap-2">
-        <NuxtLink to="/training" class="btn-secondary text-sm py-2 px-4">
-          {{ t('home.trainNow') }}
-        </NuxtLink>
-        <NuxtLink
-          to="/marketplace"
-          class="border border-white/50 text-white text-sm py-2 px-4 rounded-xl font-semibold active:scale-95 transition-all"
-        >
-          {{ t('home.viewMarketplace') }}
-        </NuxtLink>
+    <section class="rounded-2xl overflow-hidden relative shadow-md min-h-[200px]">
+      <img
+        src="/images/hero-landscape.jpg"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-br from-black/55 via-primary/40 to-primary-700/75" />
+      <div class="relative text-white p-6">
+        <h1 class="text-2xl font-bold leading-tight mb-2">
+          {{ t('home.heroTitle') }}
+        </h1>
+        <p class="text-white/85 text-sm leading-relaxed">
+          {{ t('home.heroSubtitle') }}
+        </p>
+        <!-- Quick actions -->
+        <div class="mt-5 flex flex-wrap gap-2">
+          <NuxtLink to="/training" class="btn-secondary text-sm py-2 px-4">
+            {{ t('home.trainNow') }}
+          </NuxtLink>
+          <NuxtLink
+            to="/marketplace"
+            class="border border-white/50 text-white text-sm py-2 px-4 rounded-xl font-semibold active:scale-95 transition-all"
+          >
+            {{ t('home.viewMarketplace') }}
+          </NuxtLink>
+        </div>
       </div>
     </section>
 
