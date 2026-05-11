@@ -21,6 +21,7 @@ interface Product {
   localName: string
   category: string
   emoji: string
+  image?: string
   description: string
   color: string
   textColor: string
@@ -33,6 +34,7 @@ const mockProducts: Product[] = [
     localName: 'Mbuyu',
     category: 'baobab',
     emoji: '🌳',
+    image: '/images/baobab.jpg',
     color: 'bg-primary/10',
     textColor: 'text-primary',
     description: 'The "tree of life" — powder, oil, leaves, and bark all have market value.',
@@ -43,6 +45,7 @@ const mockProducts: Product[] = [
     localName: 'Mafuta ya Mbuyu',
     category: 'baobab',
     emoji: '💧',
+    image: '/images/baobab-oil.jpg',
     color: 'bg-primary/10',
     textColor: 'text-primary',
     description: 'Cold-pressed from seeds. Used in cosmetics and cooking.',
@@ -53,6 +56,7 @@ const mockProducts: Product[] = [
     localName: 'Ukwaju',
     category: 'tamarind',
     emoji: '🍈',
+    image: '/images/tamarind.jpg',
     color: 'bg-secondary/20',
     textColor: 'text-secondary-600',
     description: 'Sweet-sour pods prized in food processing and traditional medicine.',
@@ -63,6 +67,7 @@ const mockProducts: Product[] = [
     localName: 'Bondo ya Ukwaju',
     category: 'tamarind',
     emoji: '🫙',
+    image: '/images/tamarind-paste.jpg',
     color: 'bg-secondary/20',
     textColor: 'text-secondary-600',
     description: 'Processed concentrate with 3× the value of raw pods.',
@@ -73,6 +78,7 @@ const mockProducts: Product[] = [
     localName: 'Pamba Mwitu',
     category: 'wild-cotton',
     emoji: '🌿',
+    image: '/images/wild-cotton.jpg',
     color: 'bg-accent/10',
     textColor: 'text-accent',
     description: 'Seed fibre and oil used in artisan textiles and cosmetics.',
@@ -83,6 +89,7 @@ const mockProducts: Product[] = [
     localName: 'Mafuta ya Mbegu za Pamba',
     category: 'wild-cotton',
     emoji: '🌻',
+    image: '/images/wild-cotton-seed-oil.jpg',
     color: 'bg-accent/10',
     textColor: 'text-accent',
     description: 'High-value seed oil with niche export potential.',
@@ -169,6 +176,7 @@ const filtered = computed(() => {
         :name="product.name"
         :local-name="product.localName"
         :emoji="product.emoji"
+        :image="product.image"
         :color="product.color"
         :text-color="product.textColor"
         :description="product.description"

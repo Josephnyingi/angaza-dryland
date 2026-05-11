@@ -8,6 +8,7 @@ const props = defineProps<{
   name: string
   localName: string
   emoji: string
+  image?: string
   description: string
   color?: string
   textColor?: string
@@ -21,12 +22,24 @@ const props = defineProps<{
     class="card flex gap-4 p-4 active:scale-[0.99] transition-transform"
     :class="{ 'flex-col': compact }"
   >
-    <!-- Image placeholder -->
+    <!-- Image / emoji -->
     <div
-      class="flex-shrink-0 flex items-center justify-center rounded-xl"
-      :class="[color ?? 'bg-gray-100', compact ? 'w-full h-24 text-4xl' : 'w-16 h-16 text-3xl']"
+      class="flex-shrink-0 overflow-hidden rounded-xl"
+      :class="compact ? 'w-full h-24' : 'w-16 h-16'"
     >
-      {{ emoji }}
+      <img
+        v-if="image"
+        :src="image"
+        :alt="name"
+        class="w-full h-full object-cover"
+      />
+      <div
+        v-else
+        class="w-full h-full flex items-center justify-center"
+        :class="[color ?? 'bg-gray-100', compact ? 'text-4xl' : 'text-3xl']"
+      >
+        {{ emoji }}
+      </div>
     </div>
 
     <!-- Content -->

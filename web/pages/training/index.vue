@@ -12,6 +12,7 @@ interface TrainingModule {
   titleSw: string
   duration: number
   thumbnail: string
+  image?: string
   topics: string[]
   completed: boolean
 }
@@ -23,6 +24,7 @@ const mockModules: TrainingModule[] = [
     titleSw: 'Uvunaji Endelevu wa Mbuyu',
     duration: 18,
     thumbnail: '🌳',
+    image: '/images/baobab.jpg',
     topics: ['Harvest timing', 'Tree health', 'Pod selection'],
     completed: true,
   },
@@ -32,6 +34,7 @@ const mockModules: TrainingModule[] = [
     titleSw: 'Usindikaji wa Unga wa Mbuyu',
     duration: 22,
     thumbnail: '⚗️',
+    image: '/images/baobab-oil.jpg',
     topics: ['Drying methods', 'Sieving', 'Packaging & storage'],
     completed: true,
   },
@@ -41,6 +44,7 @@ const mockModules: TrainingModule[] = [
     titleSw: 'Kuongeza Thamani ya Ukwaju',
     duration: 15,
     thumbnail: '🍈',
+    image: '/images/tamarind-paste.jpg',
     topics: ['Paste production', 'Juice processing', 'Labelling'],
     completed: false,
   },
@@ -50,6 +54,7 @@ const mockModules: TrainingModule[] = [
     titleSw: 'Upimaji na Viwango vya Ubora',
     duration: 20,
     thumbnail: '✅',
+    image: '/images/tamarind.jpg',
     topics: ['Grade A/B/C', 'Moisture testing', 'Buyer requirements'],
     completed: false,
   },
@@ -68,6 +73,7 @@ const mockModules: TrainingModule[] = [
     titleSw: 'Misingi ya Pamba Mwitu',
     duration: 12,
     thumbnail: '🌿',
+    image: '/images/wild-cotton.jpg',
     topics: ['Identification', 'Harvesting season', 'Lint quality'],
     completed: false,
   },

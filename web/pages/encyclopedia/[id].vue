@@ -21,6 +21,7 @@ interface ProductDetail {
   localName: string
   scientificName: string
   emoji: string
+  heroImage?: string
   heroColor: string
   overview: string
   nutrition: { label: string; value: string; unit: string; color: string }[]
@@ -35,6 +36,7 @@ const MOCK_PRODUCTS: Record<string, ProductDetail> = {
     localName: 'Mbuyu',
     scientificName: 'Adansonia digitata',
     emoji: '🌳',
+    heroImage: '/images/baobab.jpg',
     heroColor: 'from-primary to-primary-700',
     overview: 'The baobab is often called the "tree of life" due to its extraordinary nutritional properties and multiple marketable products. Every part of the tree — fruit, seeds, leaves, bark, and roots — has traditional and commercial uses. Baobab powder is now exported globally as a superfood.',
     nutrition: [
@@ -62,6 +64,7 @@ const MOCK_PRODUCTS: Record<string, ProductDetail> = {
     localName: 'Ukwaju',
     scientificName: 'Tamarindus indica',
     emoji: '🍈',
+    heroImage: '/images/tamarind.jpg',
     heroColor: 'from-secondary-600 to-secondary',
     overview: 'Tamarind is a tropical legume widely used in East African cuisine, food processing, and traditional medicine. The sweet-sour pulp is processed into paste, juice, sweets, and condiments. It is a hardy drought-resistant tree ideal for dryland farming.',
     nutrition: [
@@ -89,6 +92,7 @@ const MOCK_PRODUCTS: Record<string, ProductDetail> = {
     localName: 'Pamba Mwitu',
     scientificName: 'Gossypium herbaceum',
     emoji: '🌿',
+    heroImage: '/images/wild-cotton.jpg',
     heroColor: 'from-accent to-accent-600',
     overview: 'Wild cotton grows naturally in Kenyan drylands and provides two valuable outputs: seed fibre used in artisan textiles and stuffing, and seed oil used in cosmetics and cooking. Its natural, non-GMO origin commands a premium in artisan and organic markets.',
     nutrition: [
@@ -154,14 +158,23 @@ const PEAK_MONTHS: Record<string, number[]> = {
     <!-- Product detail -->
     <div v-else>
       <!-- Hero -->
-      <div :class="`bg-gradient-to-br ${product.heroColor} text-white p-6 pt-4`">
-        <NuxtLink to="/encyclopedia" class="flex items-center gap-1 text-white/70 text-sm mb-4">
-          <i class="pi pi-chevron-left text-xs" /> {{ t('common.back') }}
-        </NuxtLink>
-        <div class="text-5xl mb-3">{{ product.emoji }}</div>
-        <h1 class="text-2xl font-bold">{{ product.name }}</h1>
-        <p class="text-white/80 text-sm">{{ product.localName }}</p>
-        <p class="text-white/60 text-xs italic mt-1">{{ product.scientificName }}</p>
+      <div :class="`bg-gradient-to-br ${product.heroColor} text-white`">
+        <div v-if="product.heroImage" class="relative h-48 w-full">
+          <img :src="product.heroImage" :alt="product.name" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60" />
+          <NuxtLink to="/encyclopedia" class="absolute top-4 left-4 flex items-center gap-1 text-white/90 text-sm">
+            <i class="pi pi-chevron-left text-xs" /> {{ t('common.back') }}
+          </NuxtLink>
+        </div>
+        <div class="p-6" :class="product.heroImage ? 'pt-4' : 'pt-4'">
+          <NuxtLink v-if="!product.heroImage" to="/encyclopedia" class="flex items-center gap-1 text-white/70 text-sm mb-4">
+            <i class="pi pi-chevron-left text-xs" /> {{ t('common.back') }}
+          </NuxtLink>
+          <div v-if="!product.heroImage" class="text-5xl mb-3">{{ product.emoji }}</div>
+          <h1 class="text-2xl font-bold">{{ product.name }}</h1>
+          <p class="text-white/80 text-sm">{{ product.localName }}</p>
+          <p class="text-white/60 text-xs italic mt-1">{{ product.scientificName }}</p>
+        </div>
       </div>
 
       <!-- Tab bar -->

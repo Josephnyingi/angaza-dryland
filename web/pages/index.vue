@@ -17,6 +17,7 @@ const products = [
     name: 'Baobab',
     localName: 'Mbuyu',
     emoji: '🌳',
+    image: '/images/baobab.jpg',
     color: 'bg-primary/10',
     textColor: 'text-primary',
     description: 'Rich in Vitamin C and calcium. Powder, oil, and seeds are all marketable.',
@@ -26,6 +27,7 @@ const products = [
     name: 'Tamarind',
     localName: 'Ukwaju',
     emoji: '🍈',
+    image: '/images/tamarind.jpg',
     color: 'bg-secondary/20',
     textColor: 'text-secondary-600',
     description: 'Sweet-sour pods used in cooking, juice, and traditional medicine.',
@@ -35,6 +37,7 @@ const products = [
     name: 'Wild Cotton',
     localName: 'Pamba Mwitu',
     emoji: '🌿',
+    image: '/images/wild-cotton.jpg',
     color: 'bg-accent/10',
     textColor: 'text-accent',
     description: 'Natural fibre and seed oil with growing demand in artisan markets.',
@@ -95,6 +98,7 @@ const products = [
           :name="product.name"
           :local-name="product.localName"
           :emoji="product.emoji"
+          :image="product.image"
           :color="product.color"
           :text-color="product.textColor"
           :description="product.description"

@@ -9,6 +9,7 @@ interface TrainingModule {
   titleSw: string
   duration: number
   thumbnail: string
+  image?: string
   topics: string[]
   completed: boolean
 }
@@ -29,11 +30,20 @@ const displayTitle = computed(() =>
     :class="module.completed ? 'border-l-4 border-l-primary' : ''"
   >
     <!-- Thumbnail -->
-    <div
-      class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl"
-      :class="module.completed ? 'bg-primary/10' : 'bg-gray-100'"
-    >
-      {{ module.thumbnail }}
+    <div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0">
+      <img
+        v-if="module.image"
+        :src="module.image"
+        :alt="module.title"
+        class="w-full h-full object-cover"
+      />
+      <div
+        v-else
+        class="w-full h-full flex items-center justify-center text-2xl"
+        :class="module.completed ? 'bg-primary/10' : 'bg-gray-100'"
+      >
+        {{ module.thumbnail }}
+      </div>
     </div>
 
     <!-- Content -->
